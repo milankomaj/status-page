@@ -20,8 +20,6 @@ jobs:
         node-version: 12
     - run: yarn install
     - run: yarn build
-      env:
-       
     - name: Publish
       uses: cloudflare/wrangler-action@1.3.0
       with:
