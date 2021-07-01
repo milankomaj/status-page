@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "dev": "flareact dev",
-    "build": "yarn css && flareact build",
+    "build": "flareact build",
     "deploy": "yarn build && flareact publish",
     "kv-gc": "node ./src/cli/gcMonitors.js",
     "format": "prettier --write '**/*.{js,css,json,md}'"
