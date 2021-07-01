@@ -35,10 +35,3 @@ jobs:
           export KV_NAMESPACE_ID=$(wrangler kv:namespace list | jq -c 'map(select(.title | contains("KV_STATUS_PAGE")))' | jq -r ".[0].id")
         postCommands: |
           yarn kv-gc
-        secrets: |
-        
-      env:
-        CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
-        KV_NAMESPACE_ID: ${{ secrets.KV_NAMESPACE_ID }}
-        CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
-
