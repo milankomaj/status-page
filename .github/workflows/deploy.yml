@@ -20,8 +20,6 @@ jobs:
         node-version: 12
     - run: yarn install
     - run: yarn build
-      env:
-        NODE_ENV: production  
     - name: Publish
       uses: cloudflare/wrangler-action@1.3.0
       with:
@@ -32,10 +30,9 @@ jobs:
           export KV_NAMESPACE_ID=$(wrangler kv:namespace list | jq -c 'map(select(.title | contains("KV_STATUS_PAGE")))' | jq -r ".[0].id")
           
         postCommands: |
-          yarn kv-gc
+          node ./src/cli/gcMonitors.js
         secrets: |
         
-        environment: production
       env:
         CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
 
