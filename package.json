@@ -13,7 +13,6 @@
     "format": "prettier --write '**/*.{js,css,json,md}'"
   },
   "dependencies": {
-    "dotenv": "^8.2.0",
     "flareact": "^0.10.0",
     "laco": "^1.2.1",
     "laco-react": "^1.1.0",

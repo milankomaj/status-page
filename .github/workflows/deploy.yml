@@ -24,8 +24,13 @@ jobs:
       uses: cloudflare/wrangler-action@1.3.0
       with:
         apiToken: ${{ secrets.CF_API_TOKEN }}
-        preCommands: |
-          
+        accountId: ${{ secrets.CF_ACCOUNT_ID }}
+        namespaceId: ${{ secrets.KV_NAMESPACE_ID }}
+      env:
+        apiToken: ${{ secrets.CF_API_TOKEN }}
+        accountId: ${{ secrets.CF_ACCOUNT_ID }}
+        namespaceId: ${{ secrets.KV_NAMESPACE_ID }}         
+        preCommands: |         
           apt-get update && apt-get install -y jq
           export KV_NAMESPACE_ID=$(wrangler kv:namespace list | jq -c 'map(select(.title | contains("KV_STATUS_PAGE")))' | jq -r ".[0].id")
         postCommands: |
