@@ -34,7 +34,7 @@ jobs:
         postCommands: |
           yarn kv-gc
         secrets: |
-        environment: production
+        
       env:
         CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
 
