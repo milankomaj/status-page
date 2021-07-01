@@ -1,0 +1,152 @@
+settings:
+  title: 'Status'
+  url: '' # used for Slack messages
+  logo: favicon.svg # image in ./public/ folder
+  daysInHistogram: 90 # number of days you want to display in histogram
+  collectResponseTimes: true # collects avg response times from CRON locations
+
+  allmonitorsOperational: 'All Systems Operational'
+  notAllmonitorsOperational: 'Not All Systems Operational'
+  monitorLabelOperational: 'Operational'
+  monitorLabelNotOperational: 'No Response'
+  monitorLabelNoData: 'No data'
+  dayInHistogramNoData: 'No data'
+  dayInHistogramOperational: 'Response'
+  dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
+
+monitors:
+  - id: milankomaj-934e3
+    name: milankomaj
+    url: 'https://milankomaj-934e3.firebaseapp.com'
+    method: GET
+    expectStatus: 200
+    followRedirect: false # should fetch follow redirects, default=false
+    description: 'milankomaj-934e3.firebaseapp.com' # default=empty
+
+  - id: radio-fm
+    name: radio fm
+    description: 'mp3/128/https'
+    url: 'https://icecast.stv.livebox.sk/fm_128.mp3'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+
+  - id: radio-fun
+    name: fun radio
+    description: 'mp3/128/https'
+    url: 'https://stream.funradio.sk:18443/fun128.mp3'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+
+  - id: radio-europa
+    name: europa 2
+    description: 'mp3/128/https'
+    url: 'https://stream.radioservices.sk:443/europa2.mp3'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+
+  - id: radio-jemne
+    name: jemné melódie
+    description: 'mp3/128/https'
+    url: 'https://stream.radioservices.sk:443/jemne-hi.mp3'
+    method: GET
+    expectStatus: 200
+    followRedirect: true         
+
+  - id: radio-slovensko
+    name: radio slovensko
+    description: 'mp3/128/https'
+    url: 'https://icecast.stv.livebox.sk/slovensko_128.mp3'
+    method: GET
+    expectStatus: 200
+    followRedirect: true       
+
+  - id: radio-expres
+    name: radio expres 
+    description: 'mp3/128/https'
+    url: 'https://stream.expres.sk/128.mp3'
+    method: GET
+    expectStatus: 200
+    followRedirect: true     
+
+  - id: radio-antenarock
+    name: radio antena rock 
+    description: 'mp3/128/https'
+    url: 'https://stream.radioservices.sk:443/antena-hi.mp3'
+    method: GET
+    expectStatus: 200
+    followRedirect: true 
+    
+  #- id: radio-dobre
+  #  name: radio dobre 
+  #  description: 'mp3/128/https'
+  #  url: 'https://stream.dobreradio.sk:9813/dobreradio.mp3'
+  #  method: GET
+  #  expectStatus: 200
+  #  followRedirect: true      
+         
+  - id: radio-vlna
+    name: radio vlna 
+    description: 'mp3/128/https'
+    url: 'https://stream.radioservices.sk:443/vlna-hi.mp3'
+    method: GET
+    expectStatus: 200
+    followRedirect: true  
+            
+  - id: radio-wow
+    name: radio wow 
+    description: 'mp3/320/https'
+    url: 'https://stream.sepia.sk:8000/wownr320.mp3'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+                
+  - id: radio-model
+    name: new model radio 
+    description: 'mp3/160/https'
+    url: 'https://stream.sepia.sk:8000/newmodel160.mp3'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+                    
+  - id: radio-kiss
+    name: kiss radio
+    description: 'mp3/128/https'
+    url: 'https://radio.treecom.net/kissmp3_128.mp3'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+                        
+  #- id: radio-frontinus 
+  #  name: frontinus radio
+  #  description: 'mp3/128/https'
+  #  url: 'https://stream.frontinus.sk:8888/frontinus128.mp3'
+  #  method: GET
+  #  expectStatus: 200
+  #  followRedirect: true
+                            
+  - id: radio-best
+    name: best fm
+    description: 'mp3/128/http()'
+    url: 'http://stream2.bestfm.sk/128.mp3'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+
+  #- id: radio-beta 
+  #  name: beta radio
+  #  description: 'mp3/128/http()'
+  #  url: 'http://109.71.67.102:8000/beta_live_high.mp3'
+  #  method: GET
+  #  expectStatus: 200
+  #  followRedirect: true
+
+  - id: radio-kosice 
+    name: rádio košice
+    description: 'mp3/128/https'
+    url: 'https://stream.21.sk/radiokosice-128.mp3'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
