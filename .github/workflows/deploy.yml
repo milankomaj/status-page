@@ -30,12 +30,7 @@ jobs:
         postCommands: |
           yarn kv-gc
         secrets: |
-          CF_ACCOUNT_ID
-          KV_NAMESPACE_ID
-          CF_API_TOKEN
-          accountId
-          namespaceId
-          apiToken
+
       env:
         CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
         KV_NAMESPACE_ID: ${{ secrets.KV_NAMESPACE_ID }}
