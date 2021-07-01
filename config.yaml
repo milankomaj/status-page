@@ -111,13 +111,13 @@ monitors:
     expectStatus: 200
     followRedirect: true
                     
-  - id: radio-kiss
-    name: kiss radio
-    description: 'mp3/128/https'
-    url: 'https://radio.treecom.net/kissmp3_128.mp3'
-    method: GET
-    expectStatus: 200
-    followRedirect: true
+  #- id: radio-kiss
+  #  name: kiss radio
+  #  description: 'mp3/128/https'
+  #  url: 'https://radio.treecom.net/kissmp3_128.mp3'
+  #  method: GET
+  #  expectStatus: 200
+  #  followRedirect: true
                         
   #- id: radio-frontinus 
   #  name: frontinus radio
