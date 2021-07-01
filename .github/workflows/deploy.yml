@@ -21,7 +21,7 @@ jobs:
     - run: yarn install
     - run: yarn build
       env:
-        NODE_ENV: production
+       
     - name: Publish
       uses: cloudflare/wrangler-action@1.3.0
       with:
@@ -30,7 +30,7 @@ jobs:
           wrangler kv:namespace create KV_STATUS_PAGE
           apt-get update && apt-get install -y jq
           export KV_NAMESPACE_ID=$(wrangler kv:namespace list | jq -c 'map(select(.title | contains("KV_STATUS_PAGE")))' | jq -r ".[0].id")
-          echo "[env.production]" >> wrangler.toml
+          
         postCommands: |
           yarn kv-gc
         secrets: |
