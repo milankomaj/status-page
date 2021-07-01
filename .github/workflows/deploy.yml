@@ -28,11 +28,13 @@ jobs:
           
           apt-get update && apt-get install -y jq
           export KV_NAMESPACE_ID=$(wrangler kv:namespace list | jq -c 'map(select(.title | contains("KV_STATUS_PAGE")))' | jq -r ".[0].id")
-          
+          echo "kv_namespaces = [{binding=\"KV_STATUS_PAGE\", id=\"${KV_NAMESPACE_ID}\"}]" >> wrangler.toml
         postCommands: |
-          node ./src/cli/gcMonitors.js
+          yarn kv-gc
         secrets: |
         
       env:
         CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+        KV_NAMESPACE_ID: ${{ secrets.KV_NAMESPACE_ID }}
+        CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
 
