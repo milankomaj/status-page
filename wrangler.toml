@@ -17,3 +17,8 @@ entry-point = "./"
 #kv-namespaces = [{binding="KV_STATUS_PAGE", id="xxxx", preview_id=""}]
 #zone_id="xxx"
 #route="xxx"
+
+[vars]
+CF_ACCOUNT_ID=""
+KV_NAMESPACE_ID=""
+CF_API_TOKEN=""

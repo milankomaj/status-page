@@ -2,9 +2,9 @@ const yaml = require('yaml-loader')
 const fetch = require('node-fetch')
 const fs = require('fs')
 
-const accountId = `CF_ACCOUNT_ID`
-const namespaceId = `KV_NAMESPACE_ID`
-const apiToken = `CF_API_TOKEN`
+const accountId = process.env.CF_ACCOUNT_ID
+const namespaceId = process.env.KV_NAMESPACE_ID
+const apiToken = process.env.CF_API_TOKEN
 
 const kvMonitorsKey = 'monitors_data_v1_1'
 
