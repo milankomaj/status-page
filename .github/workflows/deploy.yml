@@ -27,7 +27,7 @@ jobs:
         preCommands: |         
           apt-get update && apt-get install -y jq
           export KV_NAMESPACE_ID=$(wrangler kv:namespace list | jq -c 'map(select(.title | contains("KV_STATUS_PAGE")))' | jq -r ".[0].id")
-          echo "kv_namespaces = [{binding=\"KV_STATUS_PAGE\", id=\"4c8484dad88a47c19b84fa6378e7f961\"}]" >> wrangler.toml
+          echo "kv-namespaces = [{binding=\"KV_STATUS_PAGE\", id=\"4c8484dad88a47c19b84fa6378e7f961\"}]" >> wrangler.toml
 
         postCommands: |
          yarn kv-gc
