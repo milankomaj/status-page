@@ -9,10 +9,11 @@
     "dev": "flareact dev",
     "build": "flareact build",
     "deploy": "yarn build && flareact publish",
-    "kv-gc": "node ./src/cli/gcMonitors.js",
+    "kv-gc": "node -r dotenv/config ./src/cli/gcMonitors.js",
     "format": "prettier --write '**/*.{js,css,json,md}'"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "flareact": "^0.10.0",
     "laco": "^1.2.1",
     "laco-react": "^1.1.0",
