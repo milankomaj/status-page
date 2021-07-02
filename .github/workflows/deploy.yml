@@ -32,8 +32,7 @@ jobs:
          yarn kv-gc
         secrets: |
         
-
-       env:
+      env:
          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
          KV_NAMESPACE_ID: ${{ secrets.KV_NAMESPACE_ID }}
          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
