@@ -26,7 +26,7 @@ jobs:
         apiToken: ${{ secrets.CF_API_TOKEN }}
         preCommands: |         
           apt-get update && apt-get install -y jq
-          export KV_NAMESPACE_ID=$(wrangler kv:namespace list | jq -c 'map(select(.title | contains("KV_STATUS_PAGE")))' | jq -r ".[0].id")
+          export KV_NAMESPACE_ID=$(wrangler kv:namespace list | jq -c 'map(select(contains("KV_STATUS_PAGE")))' | jq -r ".[0].id")
         postCommands: |
           yarn kv-gc
         secrets: |
