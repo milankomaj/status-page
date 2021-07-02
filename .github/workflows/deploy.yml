@@ -17,7 +17,7 @@ jobs:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
       with:
-        node-version: 12
+        node-version: 14
     - run: yarn install
     - run: yarn build
     - name: Publish
@@ -26,6 +26,7 @@ jobs:
         apiToken: ${{ secrets.CF_API_TOKEN }}
         preCommands: |         
           apt-get update && apt-get install -y jq
+          export KV_NAMESPACE_ID=$(wrangler kv:namespace list | jq -c 'map(select(.title | contains("KV_STATUS_PAGE")))' | jq -r ".[0].id")
         postCommands: |
          yarn kv-gc
         secrets: |
