@@ -25,7 +25,7 @@ jobs:
       with:
         apiToken: ${{ secrets.CF_API_TOKEN }}
         preCommands: |
-          wrangler kv:4c8484dad88a47c19b84fa6378e7f961 create KV_STATUS_PAGE
+          wrangler kv:namespace create KV_STATUS_PAGE
           apt-get update && apt-get install -y jq
           export KV_NAMESPACE_ID=$(wrangler kv:namespace list | jq -c 'map(select(.title | contains("KV_STATUS_PAGE")))' | jq -r ".[0].id")
         postCommands: |
