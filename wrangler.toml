@@ -1,4 +1,4 @@
-name = "status"
+name = ""
 workers_dev = true
 account_id = ""
 type = "webpack"
