@@ -13,3 +13,5 @@ Cloudflare Worker - Status Page
 ![](https://dev-badge.eleonora.workers.dev/github/open-prs/milankomaj/status-page?icon=github&style=flat&scale=1) | ![](https://dev-badge.eleonora.workers.dev/github/open-issues/milankomaj/status-page?icon=github&style=flat&scale=1) 
 ![](https://dev-badge.eleonora.workers.dev/github/closed-prs/milankomaj/status-page?icon=github&style=flat&scale=1) | ![](https://dev-badge.eleonora.workers.dev/github/closed-issues/milankomaj/status-page?icon=github&style=flat&scale=1) 
 ---
+
+
