@@ -34,6 +34,7 @@ jobs:
       runs-on: ubuntu-latest
       needs: deploy
       steps:
+      - uses: actions/checkout@v2
       - name: Timestamp
         shell: bash
         run: |
