@@ -71,10 +71,10 @@ monitors:
     expectStatus: 200
     followRedirect: true     
 
-  - id: radio-antenarock
+  - id: radio-kiks
     name: radio antena rock 
-    description: 'mp3/128/https'
-    url: 'https://stream.radioservices.sk:443/antena-hi.mp3'
+    description: 'mp3/192/https'
+    url: 'https://stream.radiokiks.sk/kiks_hq.mp3'
     method: GET
     expectStatus: 200
     followRedirect: true 
