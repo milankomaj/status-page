@@ -72,7 +72,7 @@ monitors:
     followRedirect: true     
 
   - id: radio-kiks
-    name: radio antena rock 
+    name: radio kiks 
     description: 'mp3/192/https'
     url: 'https://stream.radiokiks.sk/kiks_hq.mp3'
     method: GET
