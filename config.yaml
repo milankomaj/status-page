@@ -30,7 +30,8 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
-
+    linkable: false # allows the title to be a link, default=true
+    
   - id: radio-fun
     name: fun radio
     description: 'mp3/128/https'
@@ -38,7 +39,8 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
-
+    linkable: false # allows the title to be a link, default=true
+    
   - id: radio-europa
     name: europa 2
     description: 'mp3/128/https'
@@ -46,7 +48,8 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
-
+    linkable: false # allows the title to be a link, default=true
+    
   - id: radio-jemne
     name: jemné melódie
     description: 'mp3/128/https'
@@ -54,7 +57,8 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true         
-
+    linkable: false # allows the title to be a link, default=true
+    
   - id: radio-slovensko
     name: radio slovensko
     description: 'mp3/128/https'
@@ -62,7 +66,8 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true       
-
+    linkable: false # allows the title to be a link, default=true
+    
   - id: radio-expres
     name: radio expres 
     description: 'mp3/128/https'
@@ -70,7 +75,8 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true     
-
+    linkable: false # allows the title to be a link, default=true
+    
   - id: radio-kiks
     name: radio kiks 
     description: 'mp3/192/https'
@@ -78,6 +84,7 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true 
+    linkable: false # allows the title to be a link, default=true 
     
   #- id: radio-dobre
   #  name: radio dobre 
@@ -94,7 +101,8 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true  
-            
+    linkable: false # allows the title to be a link, default=true  
+    
   - id: radio-wow
     name: radio wow 
     description: 'mp3/320/https'
@@ -102,7 +110,8 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
-                
+    linkable: false # allows the title to be a link, default=true 
+    
   - id: radio-model
     name: new model radio 
     description: 'mp3/160/https'
@@ -110,6 +119,7 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
+    linkable: false # allows the title to be a link, default=true    
                                            
   #- id: radio-frontinus 
   #  name: frontinus radio
@@ -126,7 +136,8 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
-
+    linkable: false # allows the title to be a link, default=true
+    
   #- id: radio-beta 
   #  name: beta radio
   #  description: 'mp3/128/http()'
@@ -142,3 +153,5 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: true
+    linkable: false # allows the title to be a link, default=true
+    
