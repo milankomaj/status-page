@@ -1,6 +1,7 @@
 name = "status"
 workers_dev = true
 account_id = ""
+compatibility_date = "2021-09-18"
 type = "webpack"
 webpack_config = "node_modules/flareact/webpack"
 kv_namespaces = [{binding="KV_STATUS_PAGE", id="4c8484dad88a47c19b84fa6378e7f961", preview_id="4c8484dad88a47c19b84fa6378e7f961"}]
