@@ -86,14 +86,15 @@ monitors:
     followRedirect: true 
     linkable: false # allows the title to be a link, default=true 
     
-  #- id: radio-dobre
-  #  name: radio dobre 
-  #  description: 'mp3/128/https'
-  #  url: 'https://stream.dobreradio.sk:9813/dobreradio.mp3'
-  #  method: GET
-  #  expectStatus: 200
-  #  followRedirect: true      
-         
+  - id: radio-dobre
+    name: radio dobre 
+    description: 'mp3/128/https'
+    url: 'https://stream.dobreradio.sk:9813/dobreradio.mp3'
+    method: GET
+    expectStatus: 200
+    followRedirect: true      
+    linkable: false # allows the title to be a link, default=true
+    
   - id: radio-vlna
     name: radio vlna 
     description: 'mp3/128/https'
