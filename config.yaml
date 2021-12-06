@@ -44,8 +44,8 @@ monitors:
   - id: radio-europa
     name: europa 2
     description: 'mp3/128/https'
-    url: 'https://stream.radioservices.sk:443/europa2.mp3'
-    method: GET
+    url: 'https://stream.bauermedia.sk/europa2.mp3'
+    method: HEAD
     expectStatus: 200
     followRedirect: true
     linkable: false # allows the title to be a link, default=true
@@ -53,8 +53,8 @@ monitors:
   - id: radio-jemne
     name: jemné melódie
     description: 'mp3/128/https'
-    url: 'https://stream.radioservices.sk:443/jemne-hi.mp3'
-    method: GET
+    url: 'https://stream.bauermedia.sk/jemne-hi.mp3'
+    method: HEAD
     expectStatus: 200
     followRedirect: true         
     linkable: false # allows the title to be a link, default=true
@@ -98,8 +98,8 @@ monitors:
   - id: radio-vlna
     name: radio vlna 
     description: 'mp3/128/https'
-    url: 'https://stream.radioservices.sk:443/vlna-hi.mp3'
-    method: GET
+    url: 'https://stream.radiovlna.sk/vlna-hi.mp3'
+    method: HEAD
     expectStatus: 200
     followRedirect: true  
     linkable: false # allows the title to be a link, default=true  
