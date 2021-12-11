@@ -31,7 +31,7 @@ monitors:
     expectStatus: 200
     followRedirect: true
     linkable: false # allows the title to be a link, default=true
-    
+
   - id: radio-fun
     name: fun radio
     description: 'mp3/128/https'
@@ -40,7 +40,7 @@ monitors:
     expectStatus: 200
     followRedirect: true
     linkable: false # allows the title to be a link, default=true
-    
+
   - id: radio-europa
     name: europa 2
     description: 'mp3/128/https'
@@ -49,87 +49,70 @@ monitors:
     expectStatus: 200
     followRedirect: true
     linkable: false # allows the title to be a link, default=true
-    
+
   - id: radio-jemne
     name: jemné melódie
     description: 'mp3/128/https'
     url: 'https://stream.bauermedia.sk/jemne-hi.mp3'
     method: HEAD
     expectStatus: 200
-    followRedirect: true         
+    followRedirect: true
     linkable: false # allows the title to be a link, default=true
-    
+
   - id: radio-slovensko
     name: radio slovensko
     description: 'mp3/128/https'
     url: 'https://icecast.stv.livebox.sk/slovensko_128.mp3'
     method: GET
     expectStatus: 200
-    followRedirect: true       
+    followRedirect: true
     linkable: false # allows the title to be a link, default=true
-    
+
   - id: radio-expres
-    name: radio expres 
+    name: radio expres
     description: 'mp3/128/https'
     url: 'https://stream.expres.sk/128.mp3'
     method: GET
     expectStatus: 200
-    followRedirect: true     
+    followRedirect: true
     linkable: false # allows the title to be a link, default=true
-    
+
   - id: radio-kiks
-    name: radio kiks 
+    name: radio kiks
     description: 'mp3/192/https'
     url: 'https://stream.radiokiks.sk/kiks_hq.mp3'
     method: GET
     expectStatus: 200
-    followRedirect: true 
-    linkable: false # allows the title to be a link, default=true 
-    
-  #- id: radio-dobre
-  #  name: radio dobre 
-  #  description: 'mp3/128/https'
-  #  url: 'https://stream.dobreradio.sk:9813/dobreradio.mp3'
-  #  method: GET
-  #  expectStatus: 200
-  #  followRedirect: true      
-  #  linkable: false # allows the title to be a link, default=true
-    
+    followRedirect: true
+    linkable: false # allows the title to be a link, default=true
+
   - id: radio-vlna
-    name: radio vlna 
+    name: radio vlna
     description: 'mp3/128/https'
     url: 'https://stream.radiovlna.sk/vlna-hi.mp3'
     method: HEAD
     expectStatus: 200
-    followRedirect: true  
-    linkable: false # allows the title to be a link, default=true  
-    
+    followRedirect: true
+    linkable: false # allows the title to be a link, default=true
+
   - id: radio-wow
-    name: radio wow 
+    name: radio wow
     description: 'mp3/320/https'
-    url: 'https://stream.sepia.sk:8000/wownr320.mp3'
-    method: GET
+    url: 'https://stream.sepia.sk:8000/wow320.mp3'
+    method: HEAD
     expectStatus: 200
     followRedirect: true
-    linkable: false # allows the title to be a link, default=true 
-    
+    linkable: false # allows the title to be a link, default=true
+
   - id: radio-model
-    name: new model radio 
+    name: new model radio
     description: 'mp3/160/https'
     url: 'https://stream.sepia.sk:8000/newmodel160.mp3'
     method: GET
     expectStatus: 200
     followRedirect: true
-    linkable: false # allows the title to be a link, default=true    
-                                           
-  #- id: radio-frontinus 
-  #  name: frontinus radio
-  #  description: 'mp3/128/https'
-  #  url: 'https://stream.frontinus.sk:8888/frontinus128.mp3'
-  #  method: GET
-  #  expectStatus: 200
-  #  followRedirect: true
-                            
+    linkable: false # allows the title to be a link, default=true
+
   - id: radio-best
     name: best fm
     description: 'mp3/128/http()'
@@ -138,16 +121,8 @@ monitors:
     expectStatus: 200
     followRedirect: true
     linkable: false # allows the title to be a link, default=true
-    
-  #- id: radio-beta 
-  #  name: beta radio
-  #  description: 'mp3/128/http()'
-  #  url: 'http://109.71.67.102:8000/beta_live_high.mp3'
-  #  method: GET
-  #  expectStatus: 200
-  #  followRedirect: true
 
-  - id: radio-kosice 
+  - id: radio-kosice
     name: rádio košice
     description: 'mp3/128/https'
     url: 'https://stream.21.sk/radiokosice-128.mp3'
@@ -155,4 +130,4 @@ monitors:
     expectStatus: 200
     followRedirect: true
     linkable: false # allows the title to be a link, default=true
-    
+
