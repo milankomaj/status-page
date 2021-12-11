@@ -27,13 +27,12 @@ jobs:
         wrangler kv:namespace create KV_STATUS_PAGE
         apt-get update && apt-get install -y jq
         export KV_NAMESPACE_ID=$(wrangler kv:namespace list | jq -c 'map(select(.title | contains("KV_STATUS_PAGE")))' | jq -r ".[0].id")
-        echo "[env.production]" >> wrangler.toml
         echo "kv_namespaces = [{binding=\"KV_STATUS_PAGE\", id=\"${KV_NAMESPACE_ID}\"}]" >> wrangler.toml 
        postCommands: |
-        yarn kv-gc
-       environment: production 
+        yarn kv-gc    
     env:
      CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+  
   timestamp:
       runs-on: ubuntu-latest
       needs: deploy
