@@ -11,3 +11,13 @@ updates:
       interval: "weekly"
       day: "saturday"
       time: "11:00"
+      
+# Set update schedule for GitHub Actions
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "saturday"
+      time: "11:00"
