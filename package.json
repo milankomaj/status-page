@@ -7,10 +7,11 @@
   "private": true,
   "scripts": {
     "dev": "flareact dev",
-    "build": "flareact build",
+    "build": "yarn css && flareact build",
     "deploy": "yarn build && flareact publish",
     "kv-gc": "node ./src/cli/gcMonitors.js",
-    "format": "prettier --write '**/*.{js,css,json,md}'"
+    "format": "prettier --write '**/*.{js,css,json,md}'",
+    "css": "postcss public/tailwind.css -o public/style.css"
   },
   "dependencies": {
     "flareact": "^1.2.1",
