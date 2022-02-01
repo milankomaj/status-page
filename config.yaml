@@ -130,6 +130,15 @@ monitors:
     expectStatus: 200
     followRedirect: true
     linkable: false # allows the title to be a link, default=true
+ 
+  - id: beta-radio
+    name: beta radio
+    description: 'radioserver/http()'
+    url: 'http://109.71.67.102:8000/'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false # allows the title to be a link, default=true  
 
   - id: radio-kosice
     name: rádio košice
