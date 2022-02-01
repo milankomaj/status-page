@@ -103,15 +103,6 @@ monitors:
     expectStatus: 200
     followRedirect: true
     linkable: false # allows the title to be a link, default=true
-
-  - id: radio-model
-    name: new model radio
-    description: 'mp3/160/https'
-    url: 'https://stream.sepia.sk:8000/newmodel160.mp3'
-    method: GET
-    expectStatus: 200
-    followRedirect: true
-    linkable: false # allows the title to be a link, default=true
     
   - id: bb-fm
     name: bb fm
