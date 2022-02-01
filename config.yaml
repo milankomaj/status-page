@@ -112,6 +112,15 @@ monitors:
     expectStatus: 200
     followRedirect: true
     linkable: false # allows the title to be a link, default=true
+    
+  - id: bb-fm
+    name: BB FM
+    description: 'radioserver/https'
+    url: 'https://stream.bbfm.sk:18443'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false # allows the title to be a link, default=true   
 
   - id: radio-best
     name: best fm
