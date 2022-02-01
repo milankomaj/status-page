@@ -97,9 +97,9 @@ monitors:
 
   - id: radio-wow
     name: radio wow
-    description: 'mp3/128/https'
-    url: 'https://radioserver.online:9816/radiowow.mp3'
-    method: HEAD
+    description: 'radioserver/https'
+    url: 'https://radioserver.online:9816'
+    method: GET
     expectStatus: 200
     followRedirect: true
     linkable: false # allows the title to be a link, default=true
