@@ -114,7 +114,7 @@ monitors:
     linkable: false # allows the title to be a link, default=true
     
   - id: bb-fm
-    name: BB FM
+    name: bb fm
     description: 'radioserver/https'
     url: 'https://stream.bbfm.sk:18443'
     method: GET
