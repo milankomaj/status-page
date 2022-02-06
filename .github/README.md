@@ -12,9 +12,9 @@ Tue Feb  1 11:48:55 CET 2022
 ---
 **pull requests** | **issues**  
 ---: | :--- 
-![](https://dev-badge.eleonora.workers.dev/github/prs/milankomaj/status-page?icon=github&style=flat&scale=1) | ![](https://dev-badge.eleonora.workers.dev/github/issues/milankomaj/status-page?icon=github&style=flat&scale=1) 
-![](https://dev-badge.eleonora.workers.dev/github/open-prs/milankomaj/status-page?icon=github&style=flat&scale=1) | ![](https://dev-badge.eleonora.workers.dev/github/open-issues/milankomaj/status-page?icon=github&style=flat&scale=1) 
-![](https://dev-badge.eleonora.workers.dev/github/closed-prs/milankomaj/status-page?icon=github&style=flat&scale=1) | ![](https://dev-badge.eleonora.workers.dev/github/closed-issues/milankomaj/status-page?icon=github&style=flat&scale=1) 
+![](https://dev-badge.eleonora.workers.dev/github/PR/milankomaj/status-page?icon=github&style=flat&scale=1) | ![](https://dev-badge.eleonora.workers.dev/github/issues/milankomaj/status-page?icon=github&style=flat&scale=1) 
+![](https://dev-badge.eleonora.workers.dev/github/open-PR/milankomaj/status-page?icon=github&style=flat&scale=1) | ![](https://dev-badge.eleonora.workers.dev/github/open-issues/milankomaj/status-page?icon=github&style=flat&scale=1) 
+![](https://dev-badge.eleonora.workers.dev/github/closed-PR/milankomaj/status-page?icon=github&style=flat&scale=1) | ![](https://dev-badge.eleonora.workers.dev/github/closed-issues/milankomaj/status-page?icon=github&style=flat&scale=1) 
 ---
 
 
