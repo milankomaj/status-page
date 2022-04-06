@@ -29,7 +29,7 @@ monitors:
     url: 'https://icecast.stv.livebox.sk/fm_128.mp3'
     method: GET
     expectStatus: 200
-    followRedirect: true
+    followRedirect: false
     linkable: false # allows the title to be a link, default=true
 
   - id: radio-fun
@@ -38,7 +38,7 @@ monitors:
     url: 'https://stream.funradio.sk:18443/fun128.mp3'
     method: GET
     expectStatus: 200
-    followRedirect: true
+    followRedirect: false
     linkable: false # allows the title to be a link, default=true
 
   - id: radio-europa
@@ -47,16 +47,16 @@ monitors:
     url: 'https://stream.bauermedia.sk/europa2.mp3'
     method: HEAD
     expectStatus: 200
-    followRedirect: true
+    followRedirect: false
     linkable: false # allows the title to be a link, default=true
 
   - id: radio-jemne
-    name: jemné melódie
+    name: radio melody
     description: 'mp3/128/https'
-    url: 'https://stream.bauermedia.sk/jemne-hi.mp3'
+    url: 'https://stream.bauermedia.sk/melody-hi.mp3'
     method: HEAD
     expectStatus: 200
-    followRedirect: true
+    followRedirect: false
     linkable: false # allows the title to be a link, default=true
 
   - id: radio-slovensko
@@ -65,7 +65,7 @@ monitors:
     url: 'https://icecast.stv.livebox.sk/slovensko_128.mp3'
     method: GET
     expectStatus: 200
-    followRedirect: true
+    followRedirect: false
     linkable: false # allows the title to be a link, default=true
 
   - id: radio-expres
@@ -74,7 +74,7 @@ monitors:
     url: 'https://stream.expres.sk/128.mp3'
     method: GET
     expectStatus: 200
-    followRedirect: true
+    followRedirect: false
     linkable: false # allows the title to be a link, default=true
 
   - id: radio-kiks
@@ -83,7 +83,7 @@ monitors:
     url: 'https://stream.radiokiks.sk/kiks_hq.mp3'
     method: GET
     expectStatus: 200
-    followRedirect: true
+    followRedirect: false
     linkable: false # allows the title to be a link, default=true
 
   - id: radio-vlna
@@ -92,7 +92,7 @@ monitors:
     url: 'https://stream.radiovlna.sk/vlna-hi.mp3'
     method: HEAD
     expectStatus: 200
-    followRedirect: true
+    followRedirect: false
     linkable: false # allows the title to be a link, default=true
 
   - id: radio-wow
@@ -101,7 +101,7 @@ monitors:
     url: 'https://radioserver.online:9816'
     method: GET
     expectStatus: 200
-    followRedirect: true
+    followRedirect: false
     linkable: false # allows the title to be a link, default=true
     
   - id: bb-fm
@@ -110,7 +110,7 @@ monitors:
     url: 'https://stream.bbfm.sk:18443'
     method: GET
     expectStatus: 200
-    followRedirect: true
+    followRedirect: false
     linkable: false # allows the title to be a link, default=true   
 
   - id: radio-best
@@ -119,7 +119,7 @@ monitors:
     url: 'http://stream2.bestfm.sk/128.mp3'
     method: GET
     expectStatus: 200
-    followRedirect: true
+    followRedirect: false
     linkable: false # allows the title to be a link, default=true
  
   - id: radio-kosice
@@ -128,6 +128,6 @@ monitors:
     url: 'https://stream.21.sk/radiokosice-128.mp3'
     method: GET
     expectStatus: 200
-    followRedirect: true
+    followRedirect: false
     linkable: false # allows the title to be a link, default=true
 
