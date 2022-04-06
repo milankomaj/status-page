@@ -98,10 +98,10 @@ monitors:
   - id: radio-wow
     name: radio wow
     description: 'radioserver/https'
-    url: 'https://radioserver.online:9816'
+    url: 'https://radioserver.online:9816/'
     method: GET
     expectStatus: 200
-    followRedirect: true
+    followRedirect: false
     linkable: false # allows the title to be a link, default=true
     
   - id: bb-fm
