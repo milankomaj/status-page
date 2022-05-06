@@ -88,6 +88,7 @@ export const locations = {
  GOT: 'Gothenburg, Sweden'
  GRU: 'São Paulo, Brazil'
  GUA: 'Guatemala City, Guatemala'
+ GUM: 'Hagatna, Guam'
  GVA: 'Geneva, Switzerland'
  GYD: 'Baku, Azerbaijan'
  GYE: 'Guayaquil, Ecuador'
