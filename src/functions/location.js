@@ -84,7 +84,7 @@ export const locations = {
  FRA: 'Frankfurt, Germany',
  FUO: 'Foshan, China',
  GIG: 'Rio de Janeiro, Brazil',
- GND: 'St. George's, Grenada',
+ GND: 'St. Georges, Grenada',
  GOT: 'Gothenburg, Sweden',
  GRU: 'São Paulo, Brazil',
  GUA: 'Guatemala City, Guatemala',
