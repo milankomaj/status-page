@@ -27,7 +27,7 @@ jobs:
         apt-get update && apt-get install -y jq
         export KV_NAMESPACE_ID=$(wrangler kv:namespace list | jq -c 'map(select(.title | contains("KV_STATUS_PAGE")))' | jq -r ".[0].id")   
         namespace_id=$(wrangler kv:namespace list | jq -c 'map(select(.title | contains("__status-workers_sites_assets")))' | jq  -r ".[0].id")
-        yes | wrangler kv:namespace delete --namespace-id=${namespace_id}
+        
        postCommands: |
         yarn kv-gc
     env:
