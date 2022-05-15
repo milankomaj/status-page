@@ -2,8 +2,7 @@ name = "status"
 workers_dev = true
 account_id = ""
 compatibility_date = "2021-09-18"
-type = "webpack"
-webpack_config = "node_modules/flareact/webpack"
+main = "index.js"
 kv_namespaces = [{binding="KV_STATUS_PAGE", id="f0d41ec3d6f545188d33f201fd6680a7", preview_id="f0d41ec3d6f545188d33f201fd6680a7"}]
 
 [triggers]
@@ -11,7 +10,7 @@ crons = ["*/10 * * * *"]
 
 [site]
 bucket = "out"
-entry-point = "./"
+
 
 # uncomment and adjust following if you are not using GitHub Actions
 #[env.production]
