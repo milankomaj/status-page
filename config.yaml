@@ -32,6 +32,15 @@ monitors:
     followRedirect: false
     linkable: false # allows the title to be a link, default=true
 
+  - id: radio-regina
+    name: radio regina
+    description: 'mp3/128/https'
+    url: 'https://icecast.stv.livebox.sk/regina-bb_128.mp3'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: false # allows the title to be a link, default=true    
+
   - id: radio-fun
     name: fun radio
     description: 'mp3/128/https'
