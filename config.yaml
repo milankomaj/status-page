@@ -1,5 +1,5 @@
 settings:
-  title: 'Status'
+  title: 'status'
   url: '' # used for Slack messages
   logo: favicon.svg # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
