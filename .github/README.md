@@ -1,6 +1,6 @@
 # status-page
 Cloudflare Worker - Status Page 
-- ##### Based on *[eidam/cf-workers-status-page](https://github.com/eidam/cf-workers-status-page)* (original source, [`issues`](https://github.com/eidam/cf-workers-status-page/issues))
+- ##### *[eidam/cf-workers-status-page](https://github.com/eidam/cf-workers-status-page)* (original source, [`issues`](https://github.com/eidam/cf-workers-status-page/issues))
 ##### Changes in this repositori:
 - ##### created for firefox extension *[Radio Sk](https://addons.mozilla.org/en-US/firefox/addon/radio-sk/)*
 - ##### several visual and code changes
