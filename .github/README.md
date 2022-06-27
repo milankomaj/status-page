@@ -1,13 +1,13 @@
 # status-page
 Cloudflare Worker - Status Page 
-- ##### Based on *[eidam/cf-workers-status-page](https://github.com/eidam/cf-workers-status-page)* (original source)
+- ##### *[eidam/cf-workers-status-page](https://github.com/eidam/cf-workers-status-page)* (original source, [`issues`](https://github.com/eidam/cf-workers-status-page/issues))
 ##### Changes in this repositori:
 - ##### created for firefox extension *[Radio Sk](https://addons.mozilla.org/en-US/firefox/addon/radio-sk/)*
 - ##### several visual and code changes
 - ##### [![CodeQL](https://github.com/milankomaj/status-page/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/milankomaj/status-page/actions/workflows/codeql-analysis.yml) [![Deploy](https://github.com/milankomaj/status-page/actions/workflows/deploy.yml/badge.svg)](https://github.com/milankomaj/status-page/actions/workflows/deploy.yml)
 
 ```
-Wed Jun  1 02:36:29 CEST 2022
+Wed Jun 15 23:34:01 CEST 2022
 ```
 ---
 **pull requests** | **issues**  
