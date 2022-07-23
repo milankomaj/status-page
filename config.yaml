@@ -107,7 +107,7 @@ monitors:
   - id: radio-wow
     name: radio wow
     description: 'radioserver/https'
-    url: 'https://radioserver.online:9816'
+    url: 'https://radioserver.online:9816/radiowow.mp3'
     method: GET
     expectStatus: 200
     followRedirect: true
