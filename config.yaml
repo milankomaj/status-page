@@ -39,7 +39,7 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: false
-    linkable: false # allows the title to be a link, default=true
+    linkable: false # allows the title to be a link, default=true    
 
   - id: radio-fun
     name: fun radio
@@ -112,16 +112,7 @@ monitors:
     expectStatus: 200
     followRedirect: true
     linkable: false # allows the title to be a link, default=true
-
-  - id: radio-dobre
-    name: radio dobre
-    description: 'radioserver/https/json'
-    url: 'https://stream.dobreradio.sk:9813/status-json.xsl'
-    method: GET
-    expectStatus: 200
-    followRedirect: true
-    linkable: false # allows the title to be a link, default=true
-
+    
   - id: bb-fm
     name: bb fm
     description: 'radioserver/https'
@@ -129,7 +120,7 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: false
-    linkable: false # allows the title to be a link, default=true
+    linkable: false # allows the title to be a link, default=true   
 
   - id: radio-best
     name: best fm
@@ -139,7 +130,7 @@ monitors:
     expectStatus: 200
     followRedirect: false
     linkable: false # allows the title to be a link, default=true
-
+ 
   - id: radio-kosice
     name: rádio košice
     description: 'mp3/128/https'
@@ -148,3 +139,4 @@ monitors:
     expectStatus: 200
     followRedirect: false
     linkable: false # allows the title to be a link, default=true
+
