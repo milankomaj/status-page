@@ -61,16 +61,7 @@ getKvMonitors(kvMonitorsKey)
       if (!configMonitors.includes(monitor)) {
         delete stateMonitors.monitors[monitor]
       }
-      // delete dates older than config.settings.daysInHistogram
-      let date = new Date()
-      date.setDate(date.getDate() - config.settings.daysInHistogram)
-      date.toISOString().split('T')[0]
-      const cleanUpDate = date.toISOString().split('T')[0]
-      Object.keys(stateMonitors.monitors[monitor].checks).map((checkDay) => {
-        if (checkDay < cleanUpDate) {
-          delete stateMonitors.monitors[monitor].checks[checkDay]
-        }
-      })
+
     })
     console.log("👉 daysInHistogram:", config.settings.daysInHistogram)
     // sanity check + if good save the KV
