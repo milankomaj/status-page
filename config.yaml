@@ -115,8 +115,8 @@ monitors:
 
   - id: radio-dobre
     name: radio dobre
-    description: 'radioserver/https'
-    url: 'https://stream.dobreradio.sk:9813'
+    description: 'radioserver/https/json'
+    url: 'https://stream.dobreradio.sk:9813/status-json.xsl'
     method: GET
     expectStatus: 200
     followRedirect: true
