@@ -61,7 +61,7 @@ getKvMonitors(kvMonitorsKey)
       if (!configMonitors.includes(monitor)) {
         delete stateMonitors.monitors[monitor]
       }
-      // delete dates older than config.settings.daysInHistogram
+      // delete dates older than config.settings.daysInHistogram /(64-73)
       let date = new Date()
       date.setDate(date.getDate() - config.settings.daysInHistogram)
       date.toISOString().split('T')[0]
