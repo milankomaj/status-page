@@ -13,10 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-    - uses: actions/checkout@v3        
+    - uses: actions/checkout@v3
     - uses: actions/setup-node@v1
       with:
-       node-version: '12'			 			 			 
+       node-version: '12'
     - run: yarn install
     - run: yarn build
     - name: Publish
@@ -25,9 +25,9 @@ jobs:
        apiToken: ${{ secrets.CF_API_TOKEN }}
        preCommands: |
         apt-get update && apt-get install -y jq
-        export KV_NAMESPACE_ID=$(wrangler kv:namespace list | jq -c 'map(select(.title | contains("KV_STATUS_PAGE")))' | jq -r ".[0].id")   
+        export KV_NAMESPACE_ID=$(wrangler kv:namespace list | jq -c 'map(select(.title | contains("KV_STATUS_PAGE")))' | jq -r ".[0].id")
         namespace_id=$(wrangler kv:namespace list | jq -c 'map(select(.title | contains("__status-workers_sites_assets")))' | jq  -r ".[0].id")
-        
+
        postCommands: |
         yarn kv-gc
     env:
@@ -40,12 +40,11 @@ jobs:
       - name: Timestamp
         shell: bash
         run: |
-           date >> ./timestamp  
+           date >> ./timestamp
            zone=$(TZ='Europe/Bratislava' date -r ./timestamp)
-           sed -i "10s/.*/$zone/" ./.github/README.md
+           sed -i "11s/.*/$zone/" ./.github/README.md
            git config --global user.email ${{ secrets.EMAIL }}
-           git config --global user.name ${{ secrets.NAME }}        
+           git config --global user.name ${{ secrets.NAME }}
            git add ./.github/README.md
            git commit -m "timestamp" ./.github/README.md
-           git push --force  
-  
+           git push --force
