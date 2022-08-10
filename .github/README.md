@@ -9,6 +9,8 @@ Cloudflare Worker - Status Page
 
 ```
 
+```
+
 ---
 **pull requests** | **issues** | *[status.eleonora.workers.dev](https://status.eleonora.workers.dev/)*
 ---: | :--- | :---
