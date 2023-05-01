@@ -99,6 +99,7 @@ export const locations = {
  HAK: 'Haikou, China',
  HAM: 'Hamburg, Germany',
  HAN: 'Hanoi, Vietnam',
+ HBA: 'Hobart, Australia',
  HEL: 'Helsinki, Finland',
  HET: 'Hohhot, China',
  HFA: 'Haifa, Israel',
