@@ -20,6 +20,17 @@ jobs:
     - run: yarn install
     - run: yarn kv-gc  
     - run: yarn build
+    - name: Publish
+      uses: cloudflare/wrangler-action@2.0.0
+      with:
+       apiToken: ${{ secrets.CF_API_TOKEN }}
+       preCommands: |
+        apt-get update && apt-get install -y jq
+        export KV_NAMESPACE_ID=$(wrangler kv:namespace list | jq -c 'map(select(.title | contains("KV_STATUS_PAGE")))' | jq -r ".[0].id")   
+        namespace_id=$(wrangler kv:namespace list | jq -c 'map(select(.title | contains("__status-workers_sites_assets")))' | jq  -r ".[0].id")
+        
+       postCommands: |
+        npm run kv-gc
     #- name: Publish
       #uses: cloudflare/wrangler-action@2.0.0
       #with:
