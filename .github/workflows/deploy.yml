@@ -32,6 +32,8 @@ jobs:
      #    yarn kv-gc
     env:
      CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+     KV_NAMESPACE_ID: ${{ KV_NAMESPACE_ID }}
+     CF_API_TOKEN: ${{ CF_API_TOKEN }}
   timestamp:
       runs-on: ubuntu-latest
       needs: deploy
