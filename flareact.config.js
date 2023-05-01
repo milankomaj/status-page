@@ -1,7 +1,7 @@
 module.exports = {
   webpack: (config, options) => {
     config.module.rules.push({
-      test: /\.ya?ml$/,
+      test: /\.yaml/,
       type: 'json',
       use: 'yaml-loader',
     })
