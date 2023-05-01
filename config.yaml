@@ -1,5 +1,5 @@
 settings:
-  title: 'Status'
+  title: 'status'
   url: '' # used for Slack messages
   logo: favicon.svg # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
@@ -32,6 +32,15 @@ monitors:
     followRedirect: false
     linkable: false # allows the title to be a link, default=true
 
+  - id: radio-regina
+    name: radio regina
+    description: 'mp3/128/https'
+    url: 'https://icecast.stv.livebox.sk/regina-bb_128.mp3'
+    method: GET
+    expectStatus: 200
+    followRedirect: false
+    linkable: false # allows the title to be a link, default=true
+
   - id: radio-fun
     name: fun radio
     description: 'mp3/128/https'
@@ -54,6 +63,15 @@ monitors:
     name: radio melody
     description: 'mp3/128/https'
     url: 'https://stream.bauermedia.sk/melody-hi.mp3'
+    method: HEAD
+    expectStatus: 200
+    followRedirect: false
+    linkable: false # allows the title to be a link, default=true
+
+  - id: radio-rock
+    name: radio rock
+    description: 'mp3/128/https'
+    url: 'https://stream.bauermedia.sk/rock-hi.mp3'
     method: HEAD
     expectStatus: 200
     followRedirect: false
@@ -103,7 +121,7 @@ monitors:
     expectStatus: 200
     followRedirect: true
     linkable: false # allows the title to be a link, default=true
-    
+
   - id: bb-fm
     name: bb fm
     description: 'radioserver/https'
@@ -111,7 +129,7 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: false
-    linkable: false # allows the title to be a link, default=true   
+    linkable: false # allows the title to be a link, default=true
 
   - id: radio-best
     name: best fm
@@ -121,7 +139,7 @@ monitors:
     expectStatus: 200
     followRedirect: false
     linkable: false # allows the title to be a link, default=true
- 
+
   - id: radio-kosice
     name: rádio košice
     description: 'mp3/128/https'
@@ -130,4 +148,3 @@ monitors:
     expectStatus: 200
     followRedirect: false
     linkable: false # allows the title to be a link, default=true
-
