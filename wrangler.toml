@@ -1,6 +1,6 @@
 name = "status"
 compatibility_date = "2022-04-05"
-account_id = ""
+#account_id = ""
 workers_dev = true
 main = "./index.js"
 kv_namespaces = [{binding="KV_STATUS_PAGE", id="f0d41ec3d6f545188d33f201fd6680a7", preview_id="f0d41ec3d6f545188d33f201fd6680a7"}]
@@ -13,7 +13,7 @@ crons = ["*/10 * * * *"]
 
 [site]
 bucket = "out"
-entry-point = "./"
+#entry-point = "./"
 
 # uncomment and adjust following if you are not using GitHub Actions
 #[env.production]
