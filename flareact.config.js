@@ -8,6 +8,7 @@ module.exports = {
           loader: "yaml-loader",
           options: { asJSON: true }
         },
+        { loader: 'yaml-loader' }
       ],
     });
 
