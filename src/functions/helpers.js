@@ -1,4 +1,4 @@
-import config from '../../config.json'
+import config from '../../config.yaml'
 import { useEffect, useState } from 'react'
 
 const kvDataKey = 'monitors_data_v1_1'

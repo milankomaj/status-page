@@ -1,4 +1,4 @@
-import config from '../../config.json'
+import config from '../../config.yaml'
 import MonitorStatusLabel from './monitorStatusLabel'
 import MonitorHistogram from './monitorHistogram'
 

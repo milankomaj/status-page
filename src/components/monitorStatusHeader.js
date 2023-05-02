@@ -1,4 +1,4 @@
-import config from '../../config.json'
+import config from '../../config.yaml'
 import { locations } from '../functions/helpers'
 
 const classes = {
