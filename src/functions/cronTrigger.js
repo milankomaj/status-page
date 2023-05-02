@@ -1,5 +1,5 @@
-//import config from '../../config.yaml'
-const config = require('../../config.yaml');
+import config from '../../config.yaml'
+zz
 import {
   notifySlack,
   notifyTelegram,
