@@ -30,7 +30,7 @@ jobs:
          namespace_id=$(wrangler kv:namespace list | jq -c 'map(select(.title | contains("__status-workers_sites_assets")))' | jq  -r ".[0].id")
 
         postCommands: |
-         #yarn kv-gc
+         yarn kv-gc
     env:
      CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
      KV_NAMESPACE_ID: ${{ secrets.KV_NAMESPACE_ID }}
