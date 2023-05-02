@@ -1,17 +1,12 @@
-
 module.exports = {
   webpack: (config, options) => {
     config.module.rules.push({
       test: /\.ya?ml$/,
       type: 'json',
-      use: [
-        {
-          loader: "yaml-loader",
-          options: { asJSON: true, isWorker: true },
-        },
-      ],
-    });
+      loader: 'yaml-loader',
+      options: { asJSON: true }
+    })
 
-    return config;
+    return config
   },
-};
+}
