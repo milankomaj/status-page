@@ -1,6 +1,6 @@
-const yaml = require('yaml-loader')
-const fetch = require('node-fetch')
-const fs = require('fs')
+import yaml from 'yaml-loader';
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
+import fs from 'fs';
 const accountId = process.env.CF_ACCOUNT_ID
 const namespaceId = process.env.KV_NAMESPACE_ID
 const apiToken = process.env.CF_API_TOKEN
@@ -61,7 +61,7 @@ getKvMonitors(kvMonitorsKey)
       if (!configMonitors.includes(monitor)) {
         delete stateMonitors.monitors[monitor]
       }
-      // delete dates older than config.settings.daysInHistogram
+      // delete dates older than config.settings.daysInHistogram /(64-73)
       let date = new Date()
       date.setDate(date.getDate() - config.settings.daysInHistogram)
       date.toISOString().split('T')[0]

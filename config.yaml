@@ -39,7 +39,7 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: false
-    linkable: false # allows the title to be a link, default=true    
+    linkable: false # allows the title to be a link, default=true
 
   - id: radio-fun
     name: fun radio
@@ -63,6 +63,15 @@ monitors:
     name: radio melody
     description: 'mp3/128/https'
     url: 'https://stream.bauermedia.sk/melody-hi.mp3'
+    method: HEAD
+    expectStatus: 200
+    followRedirect: false
+    linkable: false # allows the title to be a link, default=true
+
+  - id: radio-rock
+    name: radio rock
+    description: 'mp3/128/https'
+    url: 'https://stream.bauermedia.sk/rock-hi.mp3'
     method: HEAD
     expectStatus: 200
     followRedirect: false
@@ -112,7 +121,7 @@ monitors:
     expectStatus: 200
     followRedirect: true
     linkable: false # allows the title to be a link, default=true
-    
+
   - id: bb-fm
     name: bb fm
     description: 'radioserver/https'
@@ -120,7 +129,7 @@ monitors:
     method: GET
     expectStatus: 200
     followRedirect: false
-    linkable: false # allows the title to be a link, default=true   
+    linkable: false # allows the title to be a link, default=true
 
   - id: radio-best
     name: best fm
@@ -130,7 +139,7 @@ monitors:
     expectStatus: 200
     followRedirect: false
     linkable: false # allows the title to be a link, default=true
- 
+
   - id: radio-kosice
     name: rádio košice
     description: 'mp3/128/https'
@@ -139,4 +148,3 @@ monitors:
     expectStatus: 200
     followRedirect: false
     linkable: false # allows the title to be a link, default=true
-
