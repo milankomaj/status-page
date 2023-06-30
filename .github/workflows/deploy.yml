@@ -17,6 +17,7 @@ jobs:
     - uses: actions/setup-node@v1
       with:
        node-version: '12'
+    - run: apt-fast update && apt-fast install -y jq && apt-fast install -y tee
     - run: yarn install
     - run: yarn build
       env:
@@ -26,11 +27,10 @@ jobs:
       with:
        apiToken: ${{ secrets.CF_API_TOKEN }}
        preCommands: |
-        apt-get update && apt-get install -y jq && apt-get install -y tee
         wrangler kv:namespace create KV_STATUS_PAGE || true
         export KV_NAMESPACE_ID=$(npx @cloudflare/wrangler@1 kv:namespace list 2> >(tee stderr.log >&2) | head -1 | node -pe "JSON.parse(fs.readFileSync('/dev/stdin').toString()).find(kv => kv.title.includes('KV_STATUS_PAGE')).id")
        postCommands: |
-       
+
     env:
      CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
   timestamp:
