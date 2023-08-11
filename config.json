@@ -107,9 +107,9 @@
       {
          "id": "radio-kiks",
          "name": "radio kiks",
-         "description": "mp3/192/https",
-         "url": "https://stream.radiokiks.sk/kiks_hq.mp3",
-         "method": "GET",
+         "description": "mp3/128/https",
+         "url": "https://online.radiokiks.sk:8000/kiks_hq.mp3",
+         "method": "HEAD",
          "expectStatus": 200,
          "followRedirect": false,
          "linkable": false
