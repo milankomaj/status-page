@@ -107,8 +107,8 @@
       {
          "id": "radio-kiks",
          "name": "radio kiks",
-         "description": "mp3/128/https",
-         "url": "https://online.radiokiks.sk:8000/kiks_hq.mp3",
+         "description": "radioserver/https",
+         "url": "https://online.radiokiks.sk:8000",
          "method": "HEAD",
          "expectStatus": 200,
          "followRedirect": false,
