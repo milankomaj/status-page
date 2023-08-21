@@ -99,7 +99,7 @@ monitors:
     name: radio kiks
     description: 'radioserver/https'
     url: 'https://online.radiokiks.sk:8000'
-    method: HEAD
+    method: GET
     expectStatus: 200
     followRedirect: false
     linkable: false # allows the title to be a link, default=true
