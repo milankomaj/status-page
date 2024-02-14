@@ -147,8 +147,8 @@
       {
          "id": "radio-best",
          "name": "best fm",
-         "description": "mp3/128/http()",
-         "url": "http://stream2.bestfm.sk/128.mp3",
+         "description": "radioserver/https",
+         "url": "https://stream3.bestfm.sk:8000/128.mp3",
          "method": "GET",
          "expectStatus": 200,
          "followRedirect": false,
