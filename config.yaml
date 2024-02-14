@@ -134,7 +134,7 @@ monitors:
   - id: radio-best
     name: best fm
     description: 'radioserver/https'
-    url: 'https://stream3.bestfm.sk:8000/128.mp3'
+    url: 'https://stream3.bestfm.sk:8000'
     method: GET
     expectStatus: 200
     followRedirect: false
