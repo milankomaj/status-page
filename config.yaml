@@ -135,7 +135,7 @@ monitors:
     name: best fm
     description: 'radioserver/https'
     url: 'https://stream3.bestfm.sk:8000'
-    method: GET
+    method: HEAD
     expectStatus: 200
     followRedirect: false
     linkable: false # allows the title to be a link, default=true
