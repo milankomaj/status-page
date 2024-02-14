@@ -133,8 +133,8 @@ monitors:
 
   - id: radio-best
     name: best fm
-    description: 'mp3/128/https'
-    url: 'https://stream3.bestfm.sk:8000/128.mp3'
+    description: 'radioserver/https'
+    url: 'https://stream3.bestfm.sk:8000'
     method: HEAD
     expectStatus: 302
     followRedirect: false
