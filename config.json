@@ -150,7 +150,7 @@
          "description": "radioserver/https",
          "url": "https://stream3.bestfm.sk:8000",
          "method": "HEAD",
-         "expectStatus": 200,
+         "expectStatus": 302,
          "followRedirect": false,
          "linkable": false
       },
