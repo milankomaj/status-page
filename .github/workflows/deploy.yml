@@ -18,7 +18,7 @@ jobs:
       with:
        node-version: '16'
     - run: yarn install
-    - run: yarn kv
+    - run: npm run kv
     - run: yarn build
     #- name: Publish
       #uses: cloudflare/wrangler-action@2.0.0

@@ -10,7 +10,7 @@
     "build": "yarn css && flareact build",
     "deploy": "yarn build && flareact publish",
     "kv-gc": "node ./src/cli/gcMonitors.mjs",
-    "kv": "npm run dev",
+    "kv": "npm run kv-gc",
     "format": "prettier --write '**/*.{js,css,json,md}'",
     "css": "postcss public/tailwind.css -o public/style.css"
   },
