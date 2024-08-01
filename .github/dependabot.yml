@@ -7,17 +7,17 @@ version: 2
 updates:
   - package-ecosystem: "npm" # See documentation for possible values
     directory: "/" # Location of package manifests
-    open-pull-requests-limit: 10
     schedule:
       interval: "weekly"
       day: "friday"
       time: "11:00"
+    open-pull-requests-limit: 10
       
 # Set update schedule for GitHub Actions
   - package-ecosystem: "github-actions"
-    open-pull-requests-limit: 10
     directory: "/"
     schedule:
       interval: "weekly"
       day: "saturday"
       time: "11:00"
+    open-pull-requests-limit: 10

@@ -1,0 +1,168 @@
+{
+   "settings": {
+      "title": "status",
+      "url": "",
+      "logo": "favicon.svg",
+      "daysInHistogram": 90,
+      "collectResponseTimes": true,
+      "allmonitorsOperational": "All Systems Operational",
+      "notAllmonitorsOperational": "Not All Systems Operational",
+      "monitorLabelOperational": "Operational",
+      "monitorLabelNotOperational": "No Response",
+      "monitorLabelNoData": "No data",
+      "dayInHistogramNoData": "No data",
+      "dayInHistogramOperational": "Response",
+      "dayInHistogramNotOperational": " incident(s)"
+   },
+   "monitors": [
+      {
+         "id": "milankomaj-934e3",
+         "name": "milankomaj",
+         "url": "https://milankomaj-934e3.firebaseapp.com",
+         "method": "GET",
+         "expectStatus": 200,
+         "followRedirect": false,
+         "description": "milankomaj-934e3.firebaseapp.com"
+      },
+      {
+         "id": "radio-fm",
+         "name": "radio fm",
+         "description": "mp3/128/https",
+         "url": "https://icecast.stv.livebox.sk/fm_128.mp3",
+         "method": "GET",
+         "expectStatus": 200,
+         "followRedirect": false,
+         "linkable": false
+      },
+      {
+         "id": "radio-regina",
+         "name": "radio regina",
+         "description": "mp3/128/https",
+         "url": "https://icecast.stv.livebox.sk/regina-bb_128.mp3",
+         "method": "GET",
+         "expectStatus": 200,
+         "followRedirect": false,
+         "linkable": false
+      },
+      {
+         "id": "radio-fun",
+         "name": "fun radio",
+         "description": "mp3/128/https",
+         "url": "https://stream.funradio.sk:18443/fun128.mp3",
+         "method": "GET",
+         "expectStatus": 200,
+         "followRedirect": false,
+         "linkable": false
+      },
+      {
+         "id": "radio-europa",
+         "name": "europa 2",
+         "description": "mp3/128/https",
+         "url": "https://stream.bauermedia.sk/europa2.mp3",
+         "method": "HEAD",
+         "expectStatus": 200,
+         "followRedirect": false,
+         "linkable": false
+      },
+      {
+         "id": "radio-jemne",
+         "name": "radio melody",
+         "description": "mp3/128/https",
+         "url": "https://stream.bauermedia.sk/melody-hi.mp3",
+         "method": "HEAD",
+         "expectStatus": 200,
+         "followRedirect": false,
+         "linkable": false
+      },
+      {
+         "id": "radio-rock",
+         "name": "radio rock",
+         "description": "mp3/128/https",
+         "url": "https://stream.bauermedia.sk/rock-hi.mp3",
+         "method": "HEAD",
+         "expectStatus": 200,
+         "followRedirect": false,
+         "linkable": false
+      },
+      {
+         "id": "radio-slovensko",
+         "name": "radio slovensko",
+         "description": "mp3/128/https",
+         "url": "https://icecast.stv.livebox.sk/slovensko_128.mp3",
+         "method": "GET",
+         "expectStatus": 200,
+         "followRedirect": false,
+         "linkable": false
+      },
+      {
+         "id": "radio-expres",
+         "name": "radio expres",
+         "description": "mp3/128/https",
+         "url": "https://stream.expres.sk/128.mp3",
+         "method": "GET",
+         "expectStatus": 200,
+         "followRedirect": false,
+         "linkable": false
+      },
+      {
+         "id": "radio-kiks",
+         "name": "radio kiks",
+         "description": "radioserver/https",
+         "url": "https://online.radiokiks.sk:8000",
+         "method": "GET",
+         "expectStatus": 302,
+         "followRedirect": false,
+         "linkable": false
+      },
+      {
+         "id": "radio-vlna",
+         "name": "radio vlna",
+         "description": "mp3/128/https",
+         "url": "https://stream.radiovlna.sk/vlna-hi.mp3",
+         "method": "HEAD",
+         "expectStatus": 200,
+         "followRedirect": false,
+         "linkable": false
+      },
+      {
+         "id": "radio-wow",
+         "name": "radio wow",
+         "description": "radioserver/https",
+         "url": "https://radioserver.online:9816",
+         "method": "GET",
+         "expectStatus": 200,
+         "followRedirect": true,
+         "linkable": false
+      },
+      {
+         "id": "bb-fm",
+         "name": "bb fm",
+         "description": "radioserver/https",
+         "url": "https://stream.bbfm.sk:18443",
+         "method": "GET",
+         "expectStatus": 200,
+         "followRedirect": false,
+         "linkable": false
+      },
+      {
+         "id": "radio-best",
+         "name": "best fm",
+         "description": "radioserver/https",
+         "url": "https://stream3.bestfm.sk:8000",
+         "method": "HEAD",
+         "expectStatus": 302,
+         "followRedirect": false,
+         "linkable": false
+      },
+      {
+         "id": "radio-kosice",
+         "name": "rádio košice",
+         "description": "mp3/128/https",
+         "url": "https://stream.21.sk/radiokosice-128.mp3",
+         "method": "GET",
+         "expectStatus": 200,
+         "followRedirect": false,
+         "linkable": false
+      }
+   ]
+}

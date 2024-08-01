@@ -97,10 +97,10 @@ monitors:
 
   - id: radio-kiks
     name: radio kiks
-    description: 'mp3/192/https'
-    url: 'https://stream.radiokiks.sk/kiks_hq.mp3'
+    description: 'radioserver/https'
+    url: 'https://online.radiokiks.sk:8000'
     method: GET
-    expectStatus: 200
+    expectStatus: 302
     followRedirect: false
     linkable: false # allows the title to be a link, default=true
 
@@ -133,10 +133,10 @@ monitors:
 
   - id: radio-best
     name: best fm
-    description: 'mp3/128/http()'
-    url: 'http://stream2.bestfm.sk/128.mp3'
-    method: GET
-    expectStatus: 200
+    description: 'radioserver/https'
+    url: 'https://stream3.bestfm.sk:8000'
+    method: HEAD
+    expectStatus: 302
     followRedirect: false
     linkable: false # allows the title to be a link, default=true
 
