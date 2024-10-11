@@ -3,7 +3,7 @@ workers_dev = true
 account_id = ""
 type = "webpack"
 webpack_config = "node_modules/flareact/webpack"
-compatibility_date = "2021-07-23"
+compatibility_date = "2021-09-18"
 kv_namespaces = [{binding="KV_STATUS_PAGE", id="f0d41ec3d6f545188d33f201fd6680a7", preview_id="f0d41ec3d6f545188d33f201fd6680a7"}]
 
 
