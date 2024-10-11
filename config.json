@@ -98,8 +98,8 @@
          "id": "radio-expres",
          "name": "radio expres",
          "description": "mp3/128/https",
-         "url": "https://stream.expres.sk/128.mp3",
-         "method": "GET",
+         "url": "https://stream.bauermedia.sk/expres-hi.mp3",
+         "method": "HEAD",
          "expectStatus": 200,
          "followRedirect": false,
          "linkable": false
@@ -163,6 +163,17 @@
          "expectStatus": 200,
          "followRedirect": false,
          "linkable": false
+      },
+      {
+         "id": "radio-beta",
+         "name": "rádio beta",
+         "description": "mp3/128/https/proxy",
+         "url": "https://worldradio.online/proxy/?q=http://109.71.67.102:8000/beta_live_low.mp3",
+         "method": "GET",
+         "expectStatus": 200,
+         "followRedirect": false,
+         "linkable": false
       }
+
    ]
 }
