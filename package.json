@@ -15,6 +15,6 @@
   },
   "devDependencies": {
     "node-fetch": "^3.3.1",
-    "yaml-loader": "^0.6.0"
+    "yaml-loader": "^0.8.1"
   }
 }
