@@ -44,7 +44,7 @@ monitors:
   - id: radio-fun
     name: fun radio
     description: 'mp3/128/https'
-    url: 'https://stream.funradio.sk:18443/fun128.mp3'
+    url: 'https://stream.funradio.sk:8000/fun128.mp3'
     method: GET
     expectStatus: 200
     followRedirect: false
@@ -97,10 +97,10 @@ monitors:
 
   - id: radio-kiks
     name: radio kiks
-    description: 'radioserver/https'
-    url: 'https://online.radiokiks.sk:8000'
+    description: 'mp3/128/https'
+    url: 'https://online.radiokiks.sk:8000/kiks_hq.mp3'
     method: GET
-    expectStatus: 302
+    expectStatus: 200
     followRedirect: false
     linkable: false # allows the title to be a link, default=true
 
@@ -111,15 +111,6 @@ monitors:
     method: HEAD
     expectStatus: 200
     followRedirect: false
-    linkable: false # allows the title to be a link, default=true
-
-  - id: radio-wow
-    name: radio wow
-    description: 'radioserver/https'
-    url: 'https://radioserver.online:9816'
-    method: GET
-    expectStatus: 200
-    followRedirect: true
     linkable: false # allows the title to be a link, default=true
 
   - id: bb-fm
@@ -134,9 +125,9 @@ monitors:
   - id: radio-best
     name: best fm
     description: 'radioserver/https'
-    url: 'https://stream3.bestfm.sk:8000'
-    method: HEAD
-    expectStatus: 302
+    url: 'https://stream3.bestfm.sk:8000/128.mp3''
+    method: GET
+    expectStatus: 200
     followRedirect: false
     linkable: false # allows the title to be a link, default=true
 
