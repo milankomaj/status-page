@@ -122,6 +122,15 @@ monitors:
     followRedirect: false
     linkable: false # allows the title to be a link, default=true
 
+  - id: radio-wow
+    name: radio wow
+    description: 'radioserver/https'
+    url: 'https://radioserver.online:9816'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: false # allows the title to be a link, default=true
+
   - id: radio-best
     name: best fm
     description: 'mp3/128/https'
