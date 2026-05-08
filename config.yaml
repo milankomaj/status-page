@@ -115,8 +115,8 @@ monitors:
 
   - id: bb-fm
     name: bb fm
-    description: 'radioserver/https'
-    url: 'https://stream.bbfm.sk:18443'
+    description: 'mp3/128/https'
+    url: 'https://stream.bbfm.sk/bbfm128.mp3'
     method: GET
     expectStatus: 200
     followRedirect: false
@@ -124,8 +124,8 @@ monitors:
 
   - id: radio-best
     name: best fm
-    description: 'radioserver/https'
-    url: 'https://stream3.bestfm.sk:8000/128.mp3''
+    description: 'mp3/128/https'
+    url: 'https://stream3.bestfm.sk:8000/128.mp3'
     method: GET
     expectStatus: 200
     followRedirect: false
